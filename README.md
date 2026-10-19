@@ -8,6 +8,7 @@ Plain HTML/CSS/JS, no build step. Open `index.html` in a browser, or host the fo
 | File | Content |
 |---|---|
 | `index.html` | Home: hero, slogan, product categories, "recommended for", agency logos |
+| `services.html` | The five SMV services (attire, protective equipment, accessories, medical, tactical) |
 | `about.html` | Company overview, vision, mission, core values, services, branches |
 | `products.html` | The 14 product categories (same order as the Ettijar "Produk Syarikat" list) |
 | `medsooth.html` | Medsooth™ shoe features, conditions it helps, KKM range, how it's made |

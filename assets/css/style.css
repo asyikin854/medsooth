@@ -300,3 +300,37 @@ p { margin: 0 0 1em; }
 /* Let grid columns shrink below their content width on small screens */
 .split > *, .grid > *, .prod-layout > * { min-width: 0; }
 .form input, .form select, .form textarea { width: 100%; max-width: 100%; }
+
+/* Company logo (Stealthmed Ventures) */
+.brand--company img { height: 58px; width: auto; }
+.footer-logo { display: inline-block; background: #fff; border-radius: 12px; padding: 8px 12px; }
+.footer-logo img { height: 52px; width: auto; }
+.site-footer p .wordmark { font-size: 1.1rem; color: #fff; display: inline-flex; }
+.diag-img { clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%, 0 22%); }
+.hero--company { background: #fff; position: relative; overflow: hidden; }
+.hero--company::after { content: ""; position: absolute; right: 0; top: 0; width: 46%; height: 100%; background: var(--navy); clip-path: polygon(22% 0, 100% 0, 100% 100%, 0 100%); z-index: 0; }
+.hero--company .container { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center; padding: 70px 0 80px; }
+.hero--company h1 .accent { color: var(--blue); display: block; }
+.hero--company .hero-photo { border-radius: 0; box-shadow: 0 30px 60px rgba(0,0,0,.3); max-height: 560px; width: 100%; object-fit: cover; }
+.intro-box { background: var(--navy); color: #dce6fb; padding: 26px 28px; border-radius: 4px; margin: 18px 0 24px; max-width: 560px; }
+.brand-band { background: linear-gradient(120deg, var(--navy-deep), var(--blue)); color: #dce6fb; }
+.brand-band .wordmark { color: #fff; font-size: clamp(2.4rem, 5vw, 3.6rem); }
+.brand-band .wordmark span { color: var(--sky); }
+.brand-band h2 { color: #fff; }
+.brand-band .shoe-card { background: #fff; border-radius: 24px; padding: 26px; }
+.service-card { display: flex; flex-direction: column; gap: 6px; }
+.service-card .num { font-size: 2rem; -webkit-text-stroke: 1.2px var(--blue); color: transparent; font-weight: 800; letter-spacing: 0; }
+@media (max-width: 860px) {
+  .hero--company::after { display: none; }
+  .hero--company .container { grid-template-columns: 1fr; }
+  .brand--company img { height: 46px; }
+}
+a.card { color: inherit; text-decoration: none !important; }
+.section--navy .service-card .num { -webkit-text-stroke: 1.2px var(--sky); }
+.brand--company { align-items: flex-start; }
+.brand--company img { width: auto; max-width: none; }
+.hero--company .hero-photo { width: auto; max-width: 100%; height: 540px; max-height: none; object-fit: contain; justify-self: end; box-shadow: none; }
+@media (max-width: 860px) { .hero--company .hero-photo { height: 360px; justify-self: center; } }
+.brand--company img { height: 70px; }
+.hero--company .hero-photo { clip-path: polygon(96% 0, 100% 0, 100% 100%, 0 100%, 0 34%); height: 600px; }
+@media (max-width: 860px) { .hero--company .hero-photo { height: 380px; } .brand--company img { height: 54px; } }

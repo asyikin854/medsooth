@@ -42,6 +42,7 @@ const AGENCIES = [
 const NAV = [
   ["index.html", "Home"],
   ["about.html", "About Us"],
+  ["services.html", "Services"],
   ["products.html", "Products"],
   ["medsooth.html", "Medsooth™ Shoes"],
   ["certifications.html", "Certifications"],
@@ -72,14 +73,13 @@ function renderHeader() {
   ).join("");
   return `
   <div class="topbar"><div class="container">
-    <span>Step Into Relief — Medical health footwear, uniforms &amp; equipment</span>
+    <span>Stealthmed Ventures (003662769-H) · Home of Medsooth™ — Step Into Relief</span>
     <span class="hide-sm"><a href="tel:+${SITE.phoneRaw}">${SITE.phone}</a> &nbsp;·&nbsp; <a href="mailto:${SITE.email}">${SITE.email}</a></span>
   </div></div>
   <header class="site-header"><div class="container">
     <div class="brand-block">
-      <a class="brand" href="index.html" aria-label="Medsooth home">
-        ${wordmark()}
-        <span class="wordmark-sub">MEDICAL HEALTH FOOTWEAR</span>
+      <a class="brand brand--company" href="index.html" aria-label="Stealthmed Ventures home">
+        <img src="${LOGO_DIR}smv.png" alt="Stealthmed Ventures">
       </a>
       ${certRow()}
     </div>
@@ -94,8 +94,8 @@ function renderFooter() {
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        ${wordmark()}
-        <p style="margin-top:12px">Step Into Relief. Medsooth™ is a brand of ${SITE.company}, a Bumiputera-status company and Malaysia government registered supplier of medical health footwear, uniforms and enforcement equipment.</p>
+        <span class="footer-logo"><img src="${LOGO_DIR}smv.png" alt="Stealthmed Ventures"></span>
+        <p style="margin-top:14px">Home of ${wordmark()} — Step Into Relief. A brand of ${SITE.company}, a Bumiputera-status company and Malaysia government registered contractor in defence, enforcement and medical solutions.</p>
       </div>
       <div>
         <h4>Explore</h4>
